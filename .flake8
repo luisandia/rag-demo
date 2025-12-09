@@ -1,0 +1,9 @@
+[flake8]
+    extend-ignore = E203, E501, E722
+    max-line-length = 100
+    exclude = test, migrations, */migrations/*, *migrations*, **/migrations/**, **/migrations/**/*.py
+    ; per-file-ignores =
+    ;     ./app/settings/dev.py:F405,F403
+    ;     ./app/settings/prod.py:F405,F403,F401
+    ;     ./app/settings/uat.py:F405,F403
+    ;     ./app/settings/__init__.py:F405,F403,F401
